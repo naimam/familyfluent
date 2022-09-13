@@ -1,7 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "@aws-amplify/ui-react";
+
+import React, { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+
 
 function App() {
+
+ 
+
   return (
     <div className="App">
       <header className="App-header">
@@ -23,3 +40,5 @@ function App() {
 }
 
 export default App;
+
+
