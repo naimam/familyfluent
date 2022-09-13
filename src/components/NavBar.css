@@ -1,0 +1,9 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
+/* change navbar link color */
+
+.navbar-dark .navbar-nav .nav-link
+{
+    color:#fff !important;
+}
+

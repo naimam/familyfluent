@@ -4,6 +4,9 @@ import {
   Nav, Navbar, NavDropdown, Button, Form, Modal, ToggleButton, ButtonGroup, InputGroup, Container,
 } from 'react-bootstrap';
 
+import './NavBar.css';
+
+
 
 const NavBar = () => {
 
