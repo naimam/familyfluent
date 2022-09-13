@@ -2,7 +2,7 @@ import React from 'react'
 
 const ChildNav = () => {
   return (
-    <div>ChildNav</div>
+    <div>testing</div>
   )
 }
 
