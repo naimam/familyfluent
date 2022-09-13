@@ -13,23 +13,36 @@ import {
 
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import childcare from './pages/childcare';
+import login from './pages/login';
+import about from './pages/about';
+import FAQs from './pages/FAQs';
+import meetNGreet from './pages/meetNGreet';
 
+import Eldercare from './pages/eldercare';
 function App() {
 
  
 
   return (
-    <div className="container">
-      <Header/>
-      
-      <h1>test</h1>
-      <Footer/>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+          <Route path='/login' element={<login/>}/>
+          <Route path='/about' element={<about/>}/>
+          <Route path='/FAQs' element={<FAQs/>}/>
+          <Route path='/meetNGreet' element={<meetNGreet/>}/>         
+          <Route path='/childcare' element={<childcare/>}/>
+          <Route path='/eldercare' element={<Eldercare/>}/>
+      </Routes>
+    </Router>
+
+   
   );
-}
+};
 
 export default App;
 
