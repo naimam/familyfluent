@@ -10,15 +10,10 @@ const NavBar = () => {
   return (
     <>
       <Navbar collapseOnSelect expand="md" bg="primary" variant="dark">
-        <Navbar.Brand as= {Link} to="/">
-          <img
-            alt="Logo"
-            src="https://raw.githubusercontent.com/naimam/familyfluent/dev/src/pictures/logotransparent.png?token=GHSAT0AAAAAABYO66744HP47IEFCK5RWZ7AYZBDJRA"
-            // width="30"
-            height="50"
-            className="d-inline-block align-top"
-          />{' '}
-        </Navbar.Brand>
+        {/* <Navbar.Brand as= {Link} to="/">
+         
+        {' '}
+        </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">

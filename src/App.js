@@ -21,6 +21,7 @@ import login from './pages/login';
 import about from './pages/about';
 import FAQs from './pages/FAQs';
 import meetNGreet from './pages/meetNGreet';
+import Carousel from './components/Carousel';
 
 import Eldercare from './pages/eldercare';
 function App() {
@@ -28,18 +29,22 @@ function App() {
  
 
   return (
-    <Router>
+    <><Router>
+      <Header />
       <NavBar />
       <Routes>
-          <Route path='/login' element={<login/>}/>
-          <Route path='/about' element={<about/>}/>
-          <Route path='/FAQs' element={<FAQs/>}/>
-          <Route path='/meetNGreet' element={<meetNGreet/>}/>         
-          <Route path='/childcare' element={<childcare/>}/>
-          <Route path='/eldercare' element={<Eldercare/>}/>
+        <Route path='/login' element={<login />} />
+        <Route path='/about' element={<about />} />
+        <Route path='/FAQs' element={<FAQs />} />
+        <Route path='/meetNGreet' element={<meetNGreet />} />
+        <Route path='/childcare' element={<childcare />} />
+        <Route path='/eldercare' element={<Eldercare />} />
       </Routes>
-    </Router>
-
+    </Router><div className="container">
+        
+        <Carousel />
+        <Footer />
+      </div></>
    
   );
 };
