@@ -1,30 +1,29 @@
 import React from 'react'
-import { useState } from 'react'
 
+const workers = [
+  {
+    id:1,
+    name: 'Ney Rivari',
+    Education: 'Child development'
+  },
+  {
+    id:2,
+    name: 'Madeline Kosk',
+    Education: 'Child development'
+  },
+  {
+    id:3,
+    name: 'Flore Josephine',
+    Education: 'Child development'
+  },
+  {
+    id:4,
+    name: 'Greg Lyons',
+    Education: 'Child development'
+  }
+]
 
 function meetNGreet() {
-  const [workers, setWorkers] = useState([
-    {
-      id:1,
-      name: 'Ney Rivari',
-      Education: 'Child development'
-    },
-    {
-      id:2,
-      name: 'Madeline Kosk',
-      Education: 'Child development'
-    },
-    {
-      id:3,
-      name: 'Flore Josephine',
-      Education: 'Child development'
-    },
-    {
-      id:4,
-      name: 'Greg Lyons',
-      Education: 'Child development'
-    }
-  ])
   return (
     <div className='container'>
       <div className='body'>

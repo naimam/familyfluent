@@ -1,14 +1,17 @@
 import Header from './components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import Carousel from './components/Carousel';
+import PicSlides from './components/PicSlides';
 
 function App() {
   return (
     <div className="container">
       <Header/>
-      <Carousel/>
+     <div className='body'>
+    <PicSlides/>
+     </div>
       <Footer/>
     </div>
   );
