@@ -7,9 +7,9 @@ function PicSlides() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://raw.githubusercontent.com/naimam/familyfluent/hazard/src/pictures/Child%20Care/daycare1.jpg?token=GHSAT0AAAAAABYO6675HCK65VMKNRUBQ5MGYZBM5EQ"
           alt="First slide"
           style={{ height: "400px" }}
+          src={require('../pictures/Child Care/daycare1.jpg')}
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -20,20 +20,20 @@ function PicSlides() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://raw.githubusercontent.com/naimam/familyfluent/hazard/src/pictures/Child%20Care/daycare1.jpg?token=GHSAT0AAAAAABYO6675HCK65VMKNRUBQ5MGYZBM5EQ"
+          src={require('../pictures/Child Care/daycare1.jpg')}
           alt="Second slide"
           style={{ height: "400px" }}
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h3>Second slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://raw.githubusercontent.com/naimam/familyfluent/hazard/src/pictures/Child%20Care/daycare1.jpg?token=GHSAT0AAAAAABYO6675HCK65VMKNRUBQ5MGYZBM5EQ"
-          alt="First slide"
+          src={require('../pictures/Child Care/daycare1.jpg')}
+          alt="Third slide"
           style={{ height: "400px" }}
         />
         <Carousel.Caption>
