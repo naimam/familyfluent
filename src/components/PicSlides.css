@@ -1,6 +1,10 @@
 .carouselSizing{
-    width: 80%;
-    align-content: center;
     display: flex;
-    
+    padding-top: 2%;
+    float: right;
+    margin-right: 5%;
+}
+
+.carouselText{
+    text-shadow: 2px 2px 1px  #0a1d7c;
 }

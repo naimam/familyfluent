@@ -11,9 +11,9 @@ function PicSlides() {
           style={{ height: "400px", borderRadius:'20px' }}
           src={require('../pictures/Child Care/daycare1.jpg')}
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Carousel.Caption className='carouselText'>
+          <h3>Small Groups to enhance Learning</h3>
+          <p>Our 1:10 teacher to student Ratio allows for more focus on each child's development.</p>
         </Carousel.Caption>
       </Carousel.Item>
     
@@ -24,9 +24,9 @@ function PicSlides() {
           alt="Second slide"
           style={{ height: "400px", borderRadius:'20px' }}
         />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Carousel.Caption className='carouselText'>
+          <h3>Helpful Staff</h3>
+          <p>Helps your kids feel the like their at their home away from home.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -36,9 +36,9 @@ function PicSlides() {
           alt="Third slide"
           style={{ height: "400px", borderRadius:'20px' }}
         />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Carousel.Caption className='carouselText'>
+          <h3>Hands On Learning</h3>
+          <p>Each new day brings a whole new lesson about the world!</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
