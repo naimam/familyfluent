@@ -23,6 +23,11 @@ import FAQs from './pages/FAQs';
 import MeetNGreet from './pages/meetNGreet';
 import Eldercare from './pages/eldercare';
 import Home from './pages/home';
+import Contact from './pages/contact'
+import Tour from './pages/tour'
+import Registration from './pages/registration'
+import Activities from './pages/activities.js'
+import Cirriculm from './pages/curriculm.js'
 
 function App() {
 
@@ -40,6 +45,11 @@ function App() {
         <Route path='/meetNGreet' element={<MeetNGreet />} />
         <Route path='/childcare' element={<Childcare />} />
         <Route path='/eldercare' element={<Eldercare />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/tour' element={<Tour />} />
+        <Route path='/registration' element={<Registration />} />
+        <Route path='/activites' element={<Activities />} />
+        <Route path='/cirriculm' element={<Cirriculm />} />
       </Routes>
       </Router>
       

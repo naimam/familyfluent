@@ -33,6 +33,7 @@
 .brand{
   height:100%;
   width:20%;
+  margin-left: 10px;
 }
 
 
@@ -69,4 +70,56 @@
   width: auto;
   height: max-content;
   border-radius: 20px;
+}
+
+.blogPost{
+  margin-left: 5%;
+  margin-top: 5%;
+  display: inline-block;
+  text-align: center;
+}
+
+.topthird{
+  height: 33%;
+  float: left;
+}
+.middlethird{
+  height: 33%;
+float: right;
+}
+ .spacer{
+  padding-top: 10px;
+ }
+
+ .button{
+  width: 100px;
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(215, 49, 49);
+  color:white;
+  border: 0;
+  border-radius: 5px;
+ }
+
+ .accountPage{
+  background-color: rgb(182, 181, 181);
+  margin: 10%;
+ }
+
+ .contactForm{
+  text-align: left;
+  background-color: #415dd78e;
+  padding: 20px;
+  border-radius: 10px 20px;
+  
+ }
+
+.tour{
+  text-align: center;
+  background-color: #fb9a11;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px 30px;
+  font-weight: bold;
 }

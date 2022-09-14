@@ -39,18 +39,27 @@ Amplify.configure(aws_exports);
 // define current user
 const currentUser = Auth.currentAuthenticatedUser();
 
+const getChilldren = async () => {
+  //will call to database to get children for display
+}
+
 
 export default function Login() {
     console.log('hello world');
     const userAttributes = Auth.userAttributes(currentUser);
     console.log(userAttributes);
     return (
-      <Authenticator>
+      <Authenticator className='spacer'>
         {({ signOut, user }) => (
           <main>
-            <h1>Hello {user.username}</h1>
+            <div className='container'>
+            {/* <h1>Welcome {user.username}</h1> */}
             {/* print current user credentials */}
-            <button onClick={signOut}>Sign out</button>
+              <div className='accountPage'>
+              <h1>{user.username}</h1>
+              </div>
+              <div><button onClick={signOut} className='button right'>Sign out</button></div>
+            </div>
           </main>
         )}
       </Authenticator>

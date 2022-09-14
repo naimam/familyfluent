@@ -30,28 +30,24 @@ const NavBar = () => {
             <Nav.Link as= {Link} to="/about">About</Nav.Link>
             <Nav.Link as= {Link} to="/FAQs">FAQs</Nav.Link>
             <Nav.Link as= {Link} to="/meetNGreet">Meet N Greet</Nav.Link>
+            <Nav.Link as= {Link} to="/registration">Schedule</Nav.Link>
 
             
             <NavDropdown title="Childcare" id="basic-nav-dropdown">
-              <NavDropdown.Item as= {Link} to="/childcare">About</NavDropdown.Item>
-              <NavDropdown.Item href="#"> Services </NavDropdown.Item>
-              <NavDropdown.Item href="#"> Curriculum </NavDropdown.Item>
-              <NavDropdown.Item href="#"> Testimonials </NavDropdown.Item>
-              <NavDropdown.Item href="#"> Contact </NavDropdown.Item>
+              <NavDropdown.Item as= {Link} to="/childcare">Tuition</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/cirriculm"> Curriculum </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/tour"> Tour </NavDropdown.Item>
 
             </NavDropdown>
 
             <NavDropdown title="Eldercare" id="basic-nav-dropdown">
-              <NavDropdown.Item as= {Link} to="/eldercare">About</NavDropdown.Item>
-              <NavDropdown.Item href="#"> Services </NavDropdown.Item>
-              <NavDropdown.Item href="#"> Testimonials </NavDropdown.Item>
-              <NavDropdown.Item href="#"> Contact </NavDropdown.Item>
+            <NavDropdown.Item as= {Link} to="/activities">Activities</NavDropdown.Item>
+              <NavDropdown.Item as= {Link} to="/eldercare">Pricing</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/tour" > Tour </NavDropdown.Item>
               
             </NavDropdown>
-           
-            <Nav.Link as= {Link} to="/login">Login</Nav.Link>
-
-           
+            <Nav.Link as= {Link} to="/contact">Contact</Nav.Link>
+            <Nav.Link as= {Link} to="/login">Account</Nav.Link>
 
           </Nav>
 
