@@ -36,12 +36,20 @@ Amplify.configure(aws_exports);
 //     };
 //   }
 
+// define current user
+const currentUser = Auth.currentAuthenticatedUser();
+
+
 export default function Login() {
+    console.log('hello world');
+    const userAttributes = Auth.userAttributes(currentUser);
+    console.log(userAttributes);
     return (
       <Authenticator>
         {({ signOut, user }) => (
           <main>
             <h1>Hello {user.username}</h1>
+            {/* print current user credentials */}
             <button onClick={signOut}>Sign out</button>
           </main>
         )}
