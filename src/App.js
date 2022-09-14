@@ -21,8 +21,8 @@ import Login from './pages/login';
 import About from './pages/about';
 import FAQs from './pages/FAQs';
 import MeetNGreet from './pages/meetNGreet';
-// import Carousel from './components/Carousel';
 import Eldercare from './pages/eldercare';
+
 function App() {
 
  
