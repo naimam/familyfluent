@@ -3,12 +3,12 @@ import './PicSlides.css';
 
 function PicSlides() {
   return (
-    <Carousel fade>
+    <Carousel fade className='carouselSizing'>
       <Carousel.Item>
         <img
           className="d-block w-100"
           alt="First slide"
-          style={{ height: "400px" }}
+          style={{ height: "400px", borderRadius:'20px' }}
           src={require('../pictures/Child Care/daycare1.jpg')}
         />
         <Carousel.Caption>
@@ -20,9 +20,9 @@ function PicSlides() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={require('../pictures/Child Care/daycare1.jpg')}
+          src={require('../pictures/Child Care/daycare3.jpg')}
           alt="Second slide"
-          style={{ height: "400px" }}
+          style={{ height: "400px", borderRadius:'20px' }}
         />
         <Carousel.Caption>
           <h3>Second slide label</h3>
@@ -32,9 +32,9 @@ function PicSlides() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={require('../pictures/Child Care/daycare1.jpg')}
+          src={require('../pictures/Child Care/daycare6.jpg')}
           alt="Third slide"
-          style={{ height: "400px" }}
+          style={{ height: "400px", borderRadius:'20px' }}
         />
         <Carousel.Caption>
           <h3>Third slide label</h3>
