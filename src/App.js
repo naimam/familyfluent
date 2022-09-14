@@ -1,5 +1,4 @@
 import Header from './components/Header';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "@aws-amplify/ui-react/styles.css";
@@ -17,12 +16,11 @@ import Modal from 'react-bootstrap/Modal';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import childcare from './pages/childcare';
-import login from './pages/login';
-import about from './pages/about';
+import Childcare from './pages/childcare';
+import Login from './pages/login';
+import About from './pages/about';
 import FAQs from './pages/FAQs';
-import meetNGreet from './pages/meetNGreet';
-import PicSlides from './components/PicSlides';
+import MeetNGreet from './pages/meetNGreet';
 
 import Eldercare from './pages/eldercare';
 function App() {
@@ -30,16 +28,23 @@ function App() {
  
 
   return (
-    <div className="container">
-      <Header/>
-     <div className='body'>
-    <PicSlides/>
-     </div>
-      <Footer/>
-    </div>
+    <><Router>
+      <Header />
+      <NavBar />
+      <Routes>
+        <Route path='/login' element={<Login />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/FAQs' element={<FAQs />} />
+        <Route path='/meetNGreet' element={<MeetNGreet />} />
+        <Route path='/childcare' element={<Childcare />} />
+        <Route path='/eldercare' element={<Eldercare />} />
+      </Routes>
+      </Router><div className="container">
+        
+        <Footer />
+      </div></>
+   
   );
 };
 
 export default App;
-
-
