@@ -6,10 +6,7 @@ import Footer from '../components/Footer'
 function childcare() {
   return (
     <div className='container'>
-    <Header>
-    <NavBar/>
-    </Header>
-    <Footer/>
+      <h1>Still Works</h1>
     </div>
   )
 }
