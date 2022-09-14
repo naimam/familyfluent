@@ -13,11 +13,16 @@
     "aws-amplify": "^4.3.35",
     "bootstrap": "^5.2.1",
     "build": "^0.1.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.0",
     "react-scripts": "5.0.1",
+    "sequelize": "^6.21.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
