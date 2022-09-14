@@ -53,6 +53,8 @@ function App() {
       </Routes>
       </Router>
       
+
+      <Footer />
       
       {/* <div className="container">
         

@@ -14,13 +14,13 @@
   display:flex;
 }
 
-.Footer{
+/* .Footer{
   position: absolute;
   bottom: 0;
   height:5%;
   width: 100%;
   background-color: rgb(80, 80, 250);
-}
+} */
 
 .logo{
   height:15%;

@@ -1,0 +1,12 @@
+
+.Footer{
+
+    background-color: rgb(80, 80, 250);
+    margin-bottom: 0px;
+    margin-top: 30px;
+    padding: 5px;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+
+}

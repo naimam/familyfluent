@@ -3,10 +3,15 @@ import { Auth } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import Axios from 'axios'
 
-import { Button, Heading, Image, View, Card } from "@aws-amplify/ui-react";
+// import { Button, Heading, Image, View, Card } from "@aws-amplify/ui-react";
 import { Link } from 'react-router-dom';
 import Amplify from 'aws-amplify';
-
+import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import './login.css';
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
@@ -55,7 +60,7 @@ const authen = Auth.currentAuthenticatedUser().then((user) => {
     const printAuthen = async () => {
         const a = await authen;
         console.log("a");
-        console.log(a);
+        console.log(a.email);
       };
 
     printAuthen.firstName = "Naima ";
@@ -69,24 +74,55 @@ const authen = Auth.currentAuthenticatedUser().then((user) => {
 
 export default function Login() {
 
-    Axios.get("/test").then((response) => {
-        console.log(response);
-    });
-    
 
-   
     return (
     
        <Authenticator>
-
-
                 {({ signOut, user }) => (
                     <main>
-                        {/* display authen data */}
-                       <h1>Welcome,  {printAuthen.firstName} </h1>
+                       <Container className="login-container">
+                                 <h1 className="welcome-message">Welcome,  {printAuthen.firstName}  </h1>
+                                
+                                <Row xs={1} md={2} className="g-2">
+                                    <Col>
+                                        <Card>
+                                            <Card.Img variant="top" src={require('../pictures/Child Care/daycare1.jpg')} />
+                                            <Card.Body>
+                                            <Card.Title>Childcare</Card.Title>
+                                            <Card.Text>
+                                                This is a longer card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </Card.Text>
+                                            <Button variant="primary" href="/hello">Access Childcare Portal </Button>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col>
+                                    <Card>
+                                            <Card.Img variant="top" src={require('../pictures/Elder Care/eldercare1.jpg')} />
+                                            <Card.Body>
+                                            <Card.Title>Eldercare</Card.Title>
+                                            <Card.Text>
+                                                This is a longer card with supporting text below as a natural
+                                                lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </Card.Text>
+                                            <Button variant="primary" href="/hello">Access Eldercare Portal </Button>
+                                            </Card.Body>
+                                        </Card>
+                                    
+
+                                    </Col>
+
+                                </Row>
+                           
+
+                                <Button className="signout-button" variant="danger" onClick={signOut}>Sign out</Button> 
+                            
+                           
+                        </Container>
                         
-                        {/* print current user credentials */}
-                        <button onClick={signOut}>Sign out</button>
                     </main>
                 )}
             </Authenticator>
