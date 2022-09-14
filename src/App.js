@@ -39,10 +39,13 @@ function App() {
         <Route path='/childcare' element={<Childcare />} />
         <Route path='/eldercare' element={<Eldercare />} />
       </Routes>
-      </Router><div className="container">
+      </Router>
+      <div className="container">
         
-        <Footer />
-      </div></>
+       
+      </div>
+      <Footer />
+      </>
    
   );
 };
