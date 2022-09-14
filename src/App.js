@@ -22,7 +22,8 @@ import About from './pages/about';
 import FAQs from './pages/FAQs';
 import MeetNGreet from './pages/meetNGreet';
 import Eldercare from './pages/eldercare';
-import PicSlides from './components/PicSlides';
+import Home from './pages/home';
+
 function App() {
 
  
@@ -32,6 +33,7 @@ function App() {
       <Header />
       <NavBar />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/about' element={<About />} />
         <Route path='/FAQs' element={<FAQs />} />
@@ -40,13 +42,12 @@ function App() {
         <Route path='/eldercare' element={<Eldercare />} />
       </Routes>
       </Router>
-      <PicSlides />
       
       
-      <div className="container">
+      {/* <div className="container">
         
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 };
