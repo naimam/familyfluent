@@ -22,8 +22,15 @@ import about from './pages/about';
 import FAQs from './pages/FAQs';
 import meetNGreet from './pages/meetNGreet';
 import Carousel from './components/Carousel';
-
 import Eldercare from './pages/eldercare';
+
+import '@aws-amplify/ui-react/styles.css';
+import { AmplifyProvider } from '@aws-amplify/ui-react';
+import { Amplify } from 'aws-amplify';
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
+
+
 function App() {
 
  
@@ -49,6 +56,5 @@ function App() {
   );
 };
 
-export default App;
-
+export default withAuthenticator(App);
 
