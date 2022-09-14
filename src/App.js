@@ -22,6 +22,7 @@ import About from './pages/about';
 import FAQs from './pages/FAQs';
 import MeetNGreet from './pages/meetNGreet';
 import Eldercare from './pages/eldercare';
+import PicSlides from './components/PicSlides';
 function App() {
 
  
@@ -38,10 +39,16 @@ function App() {
         <Route path='/childcare' element={<Childcare />} />
         <Route path='/eldercare' element={<Eldercare />} />
       </Routes>
-      </Router><div className="container">
+      </Router>
+      <PicSlides />
+      
+      
+      <div className="container">
         
         <Footer />
-      </div></>
+      </div></
+      >
+
    
   );
 };
