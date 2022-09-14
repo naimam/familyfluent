@@ -46,10 +46,8 @@ function App() {
       <div className="container">
         
         <Footer />
-      </div></
-      >
-
-   
+      </div>
+    </>
   );
 };
 
