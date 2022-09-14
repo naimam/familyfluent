@@ -4,6 +4,9 @@ import {
   Nav, Navbar, NavDropdown, Button, Form, Modal, ToggleButton, ButtonGroup, InputGroup, Container,
 } from 'react-bootstrap';
 
+import './NavBar.css';
+
+
 
 const NavBar = () => {
 
@@ -16,7 +19,7 @@ const NavBar = () => {
         </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className='m-auto'>
             <Nav.Link as= {Link} to="/about">About</Nav.Link>
             <Nav.Link as= {Link} to="/FAQs">FAQs</Nav.Link>
             <Nav.Link as= {Link} to="/meetNGreet">Meet N Greet</Nav.Link>
@@ -39,15 +42,12 @@ const NavBar = () => {
               
             </NavDropdown>
            
+            <Nav.Link as= {Link} to="/login">Login</Nav.Link>
 
            
 
           </Nav>
 
-          <Nav.Item className="ms-auto" variant>
-              <Nav.Link as= {Link} to="/login">Login</Nav.Link>
-          </Nav.Item>
-            
           
         </Navbar.Collapse>
         

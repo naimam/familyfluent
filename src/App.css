@@ -44,3 +44,13 @@
   text-align: center;
   font-family: fantasy;
 }
+
+.MeetGrid{
+  display: flex;
+  padding: 10px;
+  align-content: center;
+}
+
+.grid-item{
+  padding: 10px;
+}
