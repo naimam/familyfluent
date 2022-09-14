@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Auth } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 
@@ -13,46 +13,53 @@ import aws_exports from '../aws-exports';
 Amplify.configure(aws_exports);
 
 
-// function Login({ isPassedToWithAuthenticator, signOut, user }) {
-//     if (!isPassedToWithAuthenticator) {
-//       throw new Error(`isPassedToWithAuthenticator was not provided`);
-//     }
-  
-//     return (
-//       <>
-//         <h1>Hello {user.username}</h1>
-//         <button onClick={signOut}>Sign out</button>
-//       </>
-//     );
-//   }
-  
-//   export default withAuthenticator(Login);
-  
-//   export async function getStaticProps() {
-//     return {
-//       props: {
-//         isPassedToWithAuthenticator: true,
-//       },
-//     };
-//   }
+const authen = Auth.currentAuthenticatedUser().then((user) => {
 
-// define current user
-const currentUser = Auth.currentAuthenticatedUser();
+        const email = user.attributes.email;
+        console.log(email);
+        const firstName = user.attributes.given_name;
+        console.log(firstName);
+        const lastName = user.attributes.family_name;
+        console.log(lastName);
+        const phone = user.attributes.phone_number;
+        console.log(phone); 
+
+        // return json object
+        return {
+            email: email,
+            firstName: firstName,
+            lastName: lastName,
+            phone: phone
+        }
+    }).catch((err) => {
+        console.log('no user signed in');
+    }
+    
+    );
+
+
 
 
 export default function Login() {
-    console.log('hello world');
-    const userAttributes = Auth.userAttributes(currentUser);
-    console.log(userAttributes);
+    
+
+   
     return (
-      <Authenticator>
-        {({ signOut, user }) => (
-          <main>
-            <h1>Hello {user.username}</h1>
-            {/* print current user credentials */}
-            <button onClick={signOut}>Sign out</button>
-          </main>
-        )}
-      </Authenticator>
-    );
+    
+       <Authenticator>
+
+
+                {({ signOut, user }) => (
+                    <main>
+                        <h1>Hello fname </h1>
+                        {/* display authen data */}
+                        
+                        {/* print current user credentials */}
+                        <button onClick={signOut}>Sign out</button>
+                    </main>
+                )}
+            </Authenticator>
+        )
+    
+
   }
