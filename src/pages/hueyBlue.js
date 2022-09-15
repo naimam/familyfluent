@@ -14,7 +14,6 @@ function hueyBlue() {
 
     return (
         <>
-            <h1 classname="hueyHeading">Huey Blue</h1>
 
         <Container className='hueyTab'>
         <Tab.Container className="tabCol" id="left-tabs-example" defaultActiveKey="first">
