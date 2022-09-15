@@ -46,6 +46,7 @@ const NavBar = () => {
               <NavDropdown.Item as={Link} to="/tour" > Tour </NavDropdown.Item>
               
             </NavDropdown>
+            <Nav.Link as= {Link} to="/sustain">Sustainability</Nav.Link>
             <Nav.Link as= {Link} to="/contact">Contact</Nav.Link>
             <Nav.Link as= {Link} to="/login">Account</Nav.Link>
 
