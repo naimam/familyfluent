@@ -29,8 +29,11 @@ import Registration from './pages/registration'
 import Activities from './pages/activities.js'
 import Cirriculm from './pages/curriculm.js'
 import ChildcarePortal from './pages/childcarePortal';
+import EldercarePortal from './pages/eldercarePortal';
 import Sustain from './pages/sustain'
 import HueyBlue from './pages/hueyBlue';
+import ButcherBlue from './pages/butcherBlue';
+import FrenchieBlue from './pages/frenchieBlue';
 function App() {
 
  
@@ -47,6 +50,7 @@ function App() {
         <Route path='/meetNGreet' element={<MeetNGreet />} />
         <Route path='/childcare' element={<Childcare />} />
         <Route path='/login/childcarePortal' element={<ChildcarePortal />} />
+        <Route path='/login/eldercarePortal' element={<EldercarePortal />} />
 
         <Route path='/eldercare' element={<Eldercare />} />
         <Route path='/contact' element={<Contact />} />
@@ -55,6 +59,8 @@ function App() {
         <Route path='/cirriculm' element={<Cirriculm />} />
         <Route path='/sustain' element={<Sustain />} />
         <Route path='/login/childcarePortal/huey-blue' element={<HueyBlue />} />
+        <Route path='/login/childcarePortal/butcher-blue' element={<ButcherBlue />} />
+        <Route path='/login/eldercarePortal/frenchie-blue' element={<FrenchieBlue />} />
         <Route path='/activities' element={<Activities />} />
       </Routes>
       </Router>

@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import './login.css';
 import Form from 'react-bootstrap/Form';
 
-function hueyBlue() {
+function frenchieBlue() {
 
 
 
@@ -21,7 +21,7 @@ function hueyBlue() {
                 <Col sm={3}>
                     <Nav variant="pills" className="flex-column">
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Child Information</Nav.Link>
+                            <Nav.Link eventKey="first">Elder Information</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="second">Schedule Pickup / Dropoff</Nav.Link>
@@ -31,18 +31,18 @@ function hueyBlue() {
                 <Col sm={9}>
                     <Tab.Content>
                         <Tab.Pane eventKey="first">
-                            <h1>Child Information</h1>
+                            <h1>Elder Information</h1>
 
                             <Form>
                                 <Row className="mb-3">
                                     <Form.Group as={Col} controlId="formGridEmail">
                                     <Form.Label>First Name</Form.Label>
-                                    <Form.Control placeholder="Huey" disabled />
+                                    <Form.Control placeholder="Frenchie" disabled />
                                     </Form.Group>
 
                                     <Form.Group as={Col} controlId="formGridPassword">
                                     <Form.Label>Middle Initial</Form.Label>
-                                    <Form.Control placeholder="M" disabled/>
+                                    <Form.Control placeholder="L" disabled/>
                                     </Form.Group>
 
 
@@ -56,7 +56,7 @@ function hueyBlue() {
 
                                 <Form.Group as={Col} controlId="formGridAddress1">
                                     <Form.Label>Date of Birth</Form.Label>
-                                    <Form.Control placeholder="02/10/2018" disabled/>
+                                    <Form.Control placeholder="1600 BC" disabled/>
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formGridAddress1">
                                     <Form.Label>Sex</Form.Label>
@@ -102,29 +102,28 @@ function hueyBlue() {
                             <h1>Schedule Pickup / Dropoff</h1>
                             <Form>
 
-                            <Form.Group as={Col} controlId="formGridAddress1">
-                                <Form.Label>Date</Form.Label>
-                                <Form.Control placeholder="Day" type="date"/>
-                            </Form.Group>
-                            <Form.Group as={Col} controlId="formGridAddress1">
-                                <Form.Label>Pick up time</Form.Label>
-                                <Form.Control placeholder="00:00"/>
-                            </Form.Group>
+<Form.Group as={Col} controlId="formGridAddress1">
+    <Form.Label>Date</Form.Label>
+    <Form.Control placeholder="Day" type="date"/>
+</Form.Group>
+<Form.Group as={Col} controlId="formGridAddress1">
+    <Form.Label>Pick up time</Form.Label>
+    <Form.Control placeholder="00:00"/>
+</Form.Group>
 
-                            <Form.Group as={Col} controlId="formGridAddress1">
-                                <Form.Label>Drop off time</Form.Label>
-                                <Form.Control placeholder="00:00"/>
-                            </Form.Group>
+<Form.Group as={Col} controlId="formGridAddress1">
+    <Form.Label>Drop off time</Form.Label>
+    <Form.Control placeholder="00:00"/>
+</Form.Group>
 
 
-                           <Button variant="primary" type="submit" href="/login/childcarePortal">
-                                Submit
-                                </Button>
+<Button variant="primary" type="submit" href="/login/eldercarePortal">
+    Submit
+    </Button>
 
-                            
 
-                            </Form>
-                         
+
+</Form>
 
 
                         </Tab.Pane>
@@ -144,4 +143,4 @@ function hueyBlue() {
 
 }
 
-export default hueyBlue;
+export default frenchieBlue;

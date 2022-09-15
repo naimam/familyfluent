@@ -25,7 +25,6 @@ const NavBar = () => {
             <Nav.Link as= {Link} to="/about">About</Nav.Link>
             <Nav.Link as= {Link} to="/FAQs">FAQs</Nav.Link>
             <Nav.Link as= {Link} to="/meetNGreet">Meet N Greet</Nav.Link>
-            <Nav.Link as= {Link} to="/registration">Schedule</Nav.Link>
 
             
             <NavDropdown title="Childcare" id="basic-nav-dropdown">
