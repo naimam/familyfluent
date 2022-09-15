@@ -30,7 +30,7 @@ import Activities from './pages/activities.js'
 import Cirriculm from './pages/curriculm.js'
 import ChildcarePortal from './pages/childcarePortal';
 import Sustain from './pages/sustain'
-
+import HueyBlue from './pages/hueyBlue';
 function App() {
 
  
@@ -55,6 +55,7 @@ function App() {
         <Route path='/activites' element={<Activities />} />
         <Route path='/cirriculm' element={<Cirriculm />} />
         <Route path='/sustain' element={<Sustain />} />
+        <Route path='/login/childcarePortal/huey-blue' element={<HueyBlue />} />
       </Routes>
       </Router>
       
