@@ -19,58 +19,56 @@ import aws_exports from '../aws-exports';
 Amplify.configure(aws_exports);
 
 
-const authen = Auth.currentAuthenticatedUser().then((user) => {
+// const authen = Auth.currentAuthenticatedUser().then((user) => {
 
-        let email = user.attributes.email;
-        console.log(email);
-        let firstName = user.attributes.given_name;
-        console.log(firstName);
-        let lastName = user.attributes.family_name;
-        console.log(lastName);
-        let phone = user.attributes.phone_number;
-        console.log(phone); 
-
-
+//         let email = user.attributes.email;
+//         console.log(email);
+//         let firstName = user.attributes.given_name;
+//         console.log(firstName);
+//         let lastName = user.attributes.family_name;
+//         console.log(lastName);
+//         let phone = user.attributes.phone_number;
+//         console.log(phone); 
 
 
-        return (
-            <div>
-                <h1>Logged in</h1>
-                <h2>{email}</h2>
-                <h2>{firstName}</h2>
-                <h2>{lastName}</h2>
-                <h2>{phone}</h2>
-            </div>
 
-        // // return json object
-        // // return {
-        // //     email: email,
-        // //     firstName: firstName,
-        // //     lastName: lastName,
-        // //     phone: phone
-        // // }
 
-        ) 
-    }).catch((err) => {
-        console.log('no user signed in');
-    }
+//         return (
+//             <div>
+//                 <h1>Logged in</h1>
+//                 <h2>{email}</h2>
+//                 <h2>{firstName}</h2>
+//                 <h2>{lastName}</h2>
+//                 <h2>{phone}</h2>
+//             </div>
+
+//         // // return json object
+//         // // return {
+//         // //     email: email,
+//         // //     firstName: firstName,
+//         // //     lastName: lastName,
+//         // //     phone: phone
+//         // // }
+
+//         ) 
+//     }).catch((err) => {
+//         console.log('no user signed in');
+//     }
     
-    );
+//     );
 
-    const printAuthen = async () => {
-        const a = await authen;
-        console.log("a");
-        console.log(a.email);
-      };
+//     const printAuthen = async () => {
+//         const a = await authen;
+//         console.log("a");
+//         console.log(a.email);
+//       };
 
-    printAuthen.firstName = "Henry ";
-    printAuthen.lastName = "Blue";
-    printAuthen.email = "henry@gmail.com";
-    printAuthen.phone = "1234567890";
+//     printAuthen.firstName = "Henry ";
+//     printAuthen.lastName = "Blue";
+//     printAuthen.email = "henry@gmail.com";
+//     printAuthen.phone = "1234567890";
 
     
-
-
 
 export default function Login() {
 
@@ -81,7 +79,7 @@ export default function Login() {
                 {({ signOut, user }) => (
                     <main>
                        <Container className="login-container">
-                                 <h1 className="welcome-message">Welcome,  {printAuthen.firstName}  </h1>
+                                 <h1 className="welcome-message">Welcome!  </h1>
                                 
                                 <Row xs={1} md={2} className="g-2">
                                     <Col>
