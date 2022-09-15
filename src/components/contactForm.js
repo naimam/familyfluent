@@ -15,7 +15,7 @@ const contactForm = () => {
     <div className='container'>
         <div className='left'>
         <div style={{display:'flex'}}>
-            <Card style={{ width: '25rem' }}>
+            <Card style={{ width: '30rem' }}>
             <Card.Img variant="top" src="https://i.imgur.com/E34ZyYv.jpg" />
             <Card.Body>
             <Card.Title style={{textAlign:'center',fontWeight:'bold'}}>How else can we help you?</Card.Title>
@@ -38,7 +38,7 @@ const contactForm = () => {
 
             <label>Message</label>
             <textarea name='message' rows='4' className='form-control'/>
-            <input type="submit" value='send' className='form-control btn btn-primary' style={{marginTop:'10px', marginBottom: '10px'}}/>
+            <input type="submit" value='send' className='form-control btn btn-primary' style={{marginTop:'10px', marginBottom: '5px', backgroundColor:'white', color: 'black'}}/>
         </form>
         </div>
     </div>

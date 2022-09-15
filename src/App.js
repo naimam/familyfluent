@@ -29,6 +29,8 @@ import Registration from './pages/registration'
 import Activities from './pages/activities.js'
 import Cirriculm from './pages/curriculm.js'
 import ChildcarePortal from './pages/childcarePortal';
+import Sustain from './pages/sustain'
+
 function App() {
 
  
@@ -52,15 +54,17 @@ function App() {
         <Route path='/registration' element={<Registration />} />
         <Route path='/activites' element={<Activities />} />
         <Route path='/cirriculm' element={<Cirriculm />} />
+        <Route path='/sustain' element={<Sustain />} />
       </Routes>
       </Router>
       
 
       <Footer />
       
-      {/* <div className="container">
-        
-        <Footer />
+      <Footer />
+      
+      {/* <div>
+      <Footer/>
       </div> */}
     </>
   );

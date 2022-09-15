@@ -124,3 +124,19 @@ float: right;
   border-radius: 10px 30px;
   font-weight: bold;
 }
+
+.virtualTour{
+  height: 500 ;
+  width:600;
+  border: 0;
+}
+
+.sustain-pic{
+  width:90%;
+  margin-right: 10%;
+  border-radius: 10px 30px;
+}
+
+.border{
+  border-radius: 20px;
+}
