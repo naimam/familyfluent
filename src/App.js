@@ -61,7 +61,6 @@ function App() {
 
       <Footer />
       
-      <Footer />
       
       {/* <div>
       <Footer/>
