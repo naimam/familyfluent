@@ -52,10 +52,10 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/tour' element={<Tour />} />
         <Route path='/registration' element={<Registration />} />
-        <Route path='/activites' element={<Activities />} />
         <Route path='/cirriculm' element={<Cirriculm />} />
         <Route path='/sustain' element={<Sustain />} />
         <Route path='/login/childcarePortal/huey-blue' element={<HueyBlue />} />
+        <Route path='/activities' element={<Activities />} />
       </Routes>
       </Router>
       
