@@ -15,3 +15,18 @@
     margin-top: 20px;
     font-size: large;
 }
+
+a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+Card.Img {
+    padding: 10px;
+}
+
+.addButton {
+    margin: 10px;
+}

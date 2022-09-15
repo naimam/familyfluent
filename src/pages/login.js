@@ -85,7 +85,7 @@ export default function Login() {
                                 
                                 <Row xs={1} md={2} className="g-2">
                                     <Col>
-                                        <Card>
+                                        <Card style={{ width: '25rem' }}>
                                             <Card.Img variant="top" src={require('../pictures/Child Care/daycare1.jpg')} />
                                             <Card.Body>
                                             <Card.Title>Childcare</Card.Title>
@@ -94,12 +94,12 @@ export default function Login() {
                                                 lead-in to additional content. This content is a little bit
                                                 longer.
                                             </Card.Text>
-                                            <Button variant="primary" href="/hello">Access Childcare Portal </Button>
+                                            <Button variant="primary" href="/login/childcarePortal">Access Childcare Portal </Button>
                                             </Card.Body>
                                         </Card>
                                     </Col>
                                     <Col>
-                                    <Card>
+                                    <Card style={{ width: '25rem' }}>
                                             <Card.Img variant="top" src={require('../pictures/Elder Care/eldercare1.jpg')} />
                                             <Card.Body>
                                             <Card.Title>Eldercare</Card.Title>

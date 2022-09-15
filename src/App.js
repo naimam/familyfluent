@@ -28,7 +28,7 @@ import Tour from './pages/tour'
 import Registration from './pages/registration'
 import Activities from './pages/activities.js'
 import Cirriculm from './pages/curriculm.js'
-
+import ChildcarePortal from './pages/childcarePortal';
 function App() {
 
  
@@ -44,6 +44,8 @@ function App() {
         <Route path='/FAQs' element={<FAQs />} />
         <Route path='/meetNGreet' element={<MeetNGreet />} />
         <Route path='/childcare' element={<Childcare />} />
+        <Route path='/login/childcarePortal' element={<ChildcarePortal />} />
+
         <Route path='/eldercare' element={<Eldercare />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/tour' element={<Tour />} />
