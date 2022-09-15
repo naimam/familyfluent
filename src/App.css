@@ -1,7 +1,4 @@
 
-.container{
-
-}
 .App {
   text-align: center;
   overflow-x: scroll;
@@ -140,3 +137,8 @@ float: right;
 .border{
   border-radius: 20px;
 }
+
+.childcare{
+  justify-content: center;
+}
+
