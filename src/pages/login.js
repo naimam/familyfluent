@@ -63,9 +63,9 @@ const authen = Auth.currentAuthenticatedUser().then((user) => {
         console.log(a.email);
       };
 
-    printAuthen.firstName = "Naima ";
-    printAuthen.lastName = "Khan";
-    printAuthen.email = "naima@gmail.com";
+    printAuthen.firstName = "Henry ";
+    printAuthen.lastName = "Blue";
+    printAuthen.email = "henry@gmail.com";
     printAuthen.phone = "1234567890";
 
     
